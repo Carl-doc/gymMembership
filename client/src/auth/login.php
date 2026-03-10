@@ -1,26 +1,64 @@
-<?php include('../includes/header.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Aki's Fitness Gym</title>
 
-<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="card border-0 shadow-lg rounded-4 p-4" style="width: 100%; max-width: 420px;">
-        <div class="text-center mb-4">
-            <h3 class="fw-bold">Gym Membership System</h3>
-            <p class="text-muted mb-0">Sign in to continue</p>
-        </div>
+<link rel="stylesheet" href="../assets/css/style.css">
 
-        <form action="process_login.php" method="POST">
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-control rounded-3" required>
-            </div>
+<style>
+.login-page{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(90deg,#000,#888);
+}
 
-            <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" name="password" class="form-control rounded-3" required>
-            </div>
+.login-card{
+background:#f5f5f5;
+padding:40px;
+border-radius:15px;
+width:350px;
+text-align:center;
+}
 
-            <button type="submit" class="btn btn-dark w-100 rounded-3">Login</button>
-        </form>
-    </div>
+.login-card input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+.login-card button{
+width:100%;
+padding:10px;
+background:#2c5057;
+color:#fff;
+border:none;
+border-radius:8px;
+}
+</style>
+
+</head>
+
+<body class="login-page">
+
+<div class="login-card">
+
+<h2>Aki's Fitness Gym</h2>
+
+<form method="POST" action="process_login.php">
+
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
 </div>
 
-<?php include('../includes/footer.php'); ?>
+</body>
+</html>
