@@ -45,7 +45,7 @@ border-radius:8px;
 <body class="login-page">
 
 <div class="login-card">
-
+    
 <h2>Aki's Fitness Gym</h2>
 
 <form method="POST" action="process_login.php">
